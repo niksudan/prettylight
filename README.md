@@ -5,8 +5,11 @@ Pretty lights for Game Maker
 - [Prerequisites](#prerequisites)
 - [Setting Up](#setting-up)
 - [Drawing Lights](#drawing-lights)
+  - [Ambient Lighting](#ambient-lighting)
 - [Light Sprites](#light-sprites)
 - [Extra Effects](#extra-effects)
+  - [Vivid Lighting](#vivid-lighting)
+  - [Ambient Blurring](#ambient-blurring)
 
 ## Credits
 
