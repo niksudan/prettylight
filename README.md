@@ -1,6 +1,7 @@
 # prettylight
 Pretty lights for Game Maker
 
+- [Screenshots](#screenshots)
 - [Credits](#credits)
 - [Prerequisites](#prerequisites)
 - [Setting Up](#setting-up)
@@ -10,6 +11,16 @@ Pretty lights for Game Maker
 - [Extra Effects](#extra-effects)
   - [Vivid Lighting](#vivid-lighting)
   - [Ambient Blurring](#ambient-blurring)
+
+## Screenshots
+
+![Tercon Major](http://i.imgur.com/jMfCAMY.png)
+
+![Protocol](http://i.imgur.com/NN0c4ex.png)
+
+![Ahriman's Treasure](http://i.imgur.com/YEpCTx5.png)
+
+![Skolgbor](http://i.imgur.com/QEYSaAh.png)
 
 ## Credits
 
