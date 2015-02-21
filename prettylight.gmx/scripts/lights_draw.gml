@@ -13,7 +13,7 @@
 surface_set_target( lights );
 draw_clear_alpha( alc, ala );
 draw_set_blend_mode( bm_add );
-for( var i = 0; i < ds_list_size( light_list ); i ++ ) {
+for ( var i = 0; i < ds_list_size( light_list ); i ++ ) {
     with ( ds_list_find_value( light_list , i ) ) {
         draw_sprite_ext( ls , li , x - view_xview[view_id] + xo , y - view_yview[view_id] + yo , xs , ys , rs , cs , as );
     }

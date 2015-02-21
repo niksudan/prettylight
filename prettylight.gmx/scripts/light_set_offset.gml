@@ -1,10 +1,9 @@
 ///light_set_offset( xoffset, yoffset );
 
 /**
- * Set initial properties for a light object
+ * Set the light's offset from the origin
  * 
  * @author FatalSleep
- * @author Nik
  */
 
 xo = argument0;

@@ -19,7 +19,7 @@
         <script>scripts\lights_step.gml</script>
         <script>scripts\lights_draw.gml</script>
         <script>scripts\lights_finish.gml</script>
-        <script>scripts\light_add_object.gml</script>
+        <script>scripts\lights_add.gml</script>
         <scripts name="Options">
           <script>scripts\lights_set_ambience.gml</script>
           <script>scripts\lights_set_blur.gml</script>
@@ -50,7 +50,6 @@
       <object>objects\objLightControl</object>
     </objects>
   </objects>
-  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
