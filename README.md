@@ -1,6 +1,13 @@
 # prettylight
 Pretty lights for Game Maker
 
+- [Credits](#credits)
+- [Prerequisites](#prerequisites)
+- [Setting Up](#setting-up)
+- [Drawing Lights](#drawing-lights)
+- [Light Sprites](#light-sprites)
+- [Extra Effects](#extra-effects)
+
 ## Credits
 
 prettylight is a lighting engine constructed by Nik Sudan that uses modified code originally by **xygthop3** and **Fatalsleep**. These guys are amazing coders and I can't thank them enough for the resources they create.
