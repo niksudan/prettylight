@@ -32,7 +32,7 @@ lights_init( true , 0 );
 lights_set_ambience( make_color_hsv(200, 125, 50), 0.5 );
 
 // Register light objects
-lights_add_object( objLight );
+lights_add( objLight );
 </string>
           </argument>
         </arguments>
