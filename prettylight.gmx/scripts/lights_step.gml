@@ -10,11 +10,11 @@
  
 // Catch surface errors
 if ( !surface_exists( lights ) ) {
-    lights = surface_create( view_wview[view_id], view_hview[view_id] );
+    lights = surface_create( view_wview[global.light_view_id], view_hview[global.light_view_id] );
 }
 if ( !surface_exists( blurring ) ) {
-    blurring = surface_create( view_wview[view_id], view_hview[view_id] );
+    blurring = surface_create( view_wview[global.light_view_id], view_hview[global.light_view_id] );
 } 
 if ( !surface_exists( result ) ) {
-    result = surface_create( view_wview[view_id], view_hview[view_id] );
+    result = surface_create( view_wview[global.light_view_id], view_hview[global.light_view_id] );
 }
