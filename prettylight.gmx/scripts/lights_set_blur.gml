@@ -1,4 +1,4 @@
-/// lights_set_blur( active? )
+///lights_set_blur( active? )
 
 /**
  * Make the scene have an ambient blur

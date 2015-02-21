@@ -1,4 +1,4 @@
-/// light_set_sprite( sprite, index )
+///light_set_sprite( sprite, index )
 
 /**
  * Sets the sprite for the light

@@ -26,10 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// Controller for lights
-lights_init();
+lights_init( true , 0 );
 
 // To make non-lit up areas blue (ooo)
 lights_set_ambience( make_color_hsv(200, 125, 50), 0.5 );
+
+// Add objLight To The Light Object Drawing List.
+light_add_object( objLight );
 </string>
           </argument>
         </arguments>

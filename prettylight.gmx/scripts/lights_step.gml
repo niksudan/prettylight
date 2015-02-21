@@ -1,20 +1,20 @@
-/// lights_step()
+///lights_step( view_id )
 
 /**
  * Processes the light system
  * Preferably called in a step event
  *
- * @author Fatalsleep
+ * @author FatalSleep
  * @author Nik
  */
  
 // Catch surface errors
 if ( !surface_exists( lights ) ) {
-    lights = surface_create( view_wview[0], view_hview[0] );
+    lights = surface_create( view_wview[view_id], view_hview[view_id] );
 }
 if ( !surface_exists( blurring ) ) {
-    blurring = surface_create( view_wview[0], view_hview[0] );
+    blurring = surface_create( view_wview[view_id], view_hview[view_id] );
 } 
 if ( !surface_exists( result ) ) {
-    result = surface_create( view_wview[0], view_hview[0] );
+    result = surface_create( view_wview[view_id], view_hview[view_id] );
 }

@@ -1,10 +1,10 @@
-/// lights_draw()
+///lights_draw()
 
 /**
  * Draws the lighting system
  * Preferably called in a Draw GUI event
  *
- * @author Fatalsleep
+ * @author FatalSleep
  * @author xygthop3
  * @author Nik
  */
@@ -13,9 +13,11 @@
 surface_set_target( lights );
 draw_clear_alpha( alc, ala );
 draw_set_blend_mode( bm_add );
-with ( objLight ) {
-    draw_sprite_ext( ls , li , -view_xview + x + xo , -view_yview + y + yo , xs , ys , rs , cs , as );
-}
+for( var i = 0; i < ds_list_size( light_list ); i ++ ) {
+    with ( ds_list_find_value( light_list , i ) ) {
+        draw_sprite_ext( ls , li , x - view_xview[view_id] + xo , y - view_yview[view_id] + yo , xs , ys , rs , cs , as );
+    }
+};
 draw_set_blend_mode( bm_normal );
 surface_reset_target();
  
@@ -34,7 +36,6 @@ draw_set_blend_mode( bm_normal );
 
 // Process the blurring
 if ( ab ) {
-    
     // We grab the application surface and blur it horizontally
     surface_set_target( blurring );
     if ( shader_enabled ) {
@@ -57,5 +58,4 @@ if ( ab ) {
     
     // Overlay the blur on top
     draw_surface_ext( result , 0, 0, 1, 1, 0, c_white, boa );
-    
 }

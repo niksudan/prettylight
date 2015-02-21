@@ -1,4 +1,4 @@
-/// lights_set_blur_alpha( value )
+///lights_set_blur_alpha( value )
 
 /**
  * Sets the blur overlay alpha
