@@ -1,4 +1,4 @@
-<p align="center"><img width="400" src="http://i.imgur.com/R6cqqDc.png"></p>
+<p align="center"><img width="200" src="http://i.imgur.com/R6cqqDc.png"></p>
 <h1 align="center">prettylight</h1>
 <p align="center">Pretty lights for Game Maker</p>
 
