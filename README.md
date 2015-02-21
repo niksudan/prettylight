@@ -43,21 +43,24 @@ prettylight comes with a prebuilt light controller and parent object, but you ca
 
 The lights are controlled with the light controller object. This should have a pretty low depth so it runs before other objects. The controller object needs to run 4 functions:
 
-- ``` lights_init() ``` - this sets up the lighting system, call this in a **creation or trigger event**
+- ``` lights_init( shaders? , view_id ) ``` - this sets up the lighting system, call this in a **creation or trigger event**. "shaders?" true/false, defines whether or not to apply shaders to the lighting system. "view_id" is the id 0-15 of whichever view you wish to enable lighting on.
+
 - ``` lights_step() ``` - this processes the lighting system, call this in a **step event**
 - ``` lights_draw() ``` - this controls the drawing for the lighting system, call this in the **draw gui event**
 - ``` lights_finish() ``` - this ends the lighting system, call this in the **room/game end event**
+- ``` light_add_object( obj1, obj2, obj3, ... ) ``` - adds an object or multiple objects to render as light(s).
 
-You'll also need to setup a light parent object. One comes with the package.
+
 
 ## Drawing Lights
 
-To draw lights, you must set the parent of the object you'd like to light up to the light parent object. Next, in the **create event**, declare the function ``` event_inherited() ``` to finish declaring a basic light. You may customise the way the light looks with a few functions.
+Call the light_set() script or each of the other five scripts individually to set up your light object. Just make sure that all the properties are set, otherwise an error will be thrown.
 
 - ``` light_set_alpha( value ) ``` - sets the light's alpha
 - ``` light_set_color( colour ) ``` - sets the light's colour
 - ``` light_set_scale( xscale, yscale ) ``` - sets the light's scale
 - ``` light_set_spite( sprite, index ) ``` - sets the light's sprite
+- ``` light_set_offset( xoffset, yoffset ) ``` - sets the light's x,y offset.
 
 A master function called ``` light_set() ``` exists that can modify all potential properties.
 
