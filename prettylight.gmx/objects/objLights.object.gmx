@@ -30,9 +30,6 @@ lights_init();
 
 // To make non-lit up areas blue (ooo)
 lights_set_ambience( make_color_hsv(200, 125, 50), 0.5 );
-
-// To make the blurring effect more distinguishable (oooooooOOO)
-lights_set_blur_alpha( 0.5 );
 </string>
           </argument>
         </arguments>

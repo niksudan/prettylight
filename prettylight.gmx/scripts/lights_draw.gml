@@ -8,6 +8,16 @@
  * @author xygthop3
  * @author Nik
  */
+
+// Process the lights
+surface_set_target( lights );
+draw_clear_alpha( alc, ala );
+draw_set_blend_mode( bm_add );
+with ( objLight ) {
+    draw_sprite_ext( ls , li , -view_xview + x + xo , -view_yview + y + yo , xs , ys , rs , cs , as );
+}
+draw_set_blend_mode( bm_normal );
+surface_reset_target();
  
 draw_set_alpha( 1 );
 
