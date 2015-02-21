@@ -1,4 +1,4 @@
-/// light_set_scale( xscale, yscale )
+///light_set_scale( xscale, yscale )
 
 /**
  * Sets the scale of the light sprite

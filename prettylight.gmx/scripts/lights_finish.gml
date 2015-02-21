@@ -1,4 +1,4 @@
-/// lights_finish()
+///lights_finish()
 
 /**
  * Ends the light system
@@ -8,3 +8,6 @@
  */
  
 surface_free( lights );
+surface_free( blurring );
+surface_free( result );
+ds_list_destroy( light_list );

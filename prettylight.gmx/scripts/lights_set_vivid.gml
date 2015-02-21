@@ -1,4 +1,4 @@
-/// lights_set_vivid( active? )
+///lights_set_vivid( active? )
 
 /**
  * Make lights vivid when drawn

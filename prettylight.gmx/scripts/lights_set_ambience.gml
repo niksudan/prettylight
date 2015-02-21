@@ -1,4 +1,4 @@
-/// lights_set_ambience( colour, alpha )
+///lights_set_ambience( colour, alpha )
 
 /**
  * Sets the ambient colour

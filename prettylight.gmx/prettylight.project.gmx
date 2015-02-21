@@ -19,6 +19,7 @@
         <script>scripts\lights_step.gml</script>
         <script>scripts\lights_draw.gml</script>
         <script>scripts\lights_finish.gml</script>
+        <script>scripts\light_add_object.gml</script>
         <scripts name="Options">
           <script>scripts\lights_set_ambience.gml</script>
           <script>scripts\lights_set_blur.gml</script>
@@ -29,6 +30,7 @@
       </scripts>
       <scripts name="Individual">
         <script>scripts\light_set.gml</script>
+        <script>scripts\light_set_offset.gml</script>
         <script>scripts\light_set_alpha.gml</script>
         <script>scripts\light_set_color.gml</script>
         <script>scripts\light_set_scale.gml</script>
@@ -45,7 +47,7 @@
   <objects name="objects">
     <objects name="prettylight">
       <object>objects\objLight</object>
-      <object>objects\objLights</object>
+      <object>objects\objLightControl</object>
     </objects>
   </objects>
   <rooms name="rooms"/>

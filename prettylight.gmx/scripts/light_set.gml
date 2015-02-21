@@ -1,9 +1,9 @@
-/// light_set( sprite, index, xoffset, yoffset, xscale, yscale, rot, colour, alpha );
+///light_set( sprite, index, xoffset, yoffset, xscale, yscale, rot, colour, alpha );
 
 /**
  * Set initial properties for a light object
  * 
- * @author Fatalsleep
+ * @author FatalSleep
  * @author Nik
  */
 

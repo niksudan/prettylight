@@ -1,4 +1,4 @@
-/// light_set_color( colour );
+///light_set_color( colour );
 
 /**
  * Sets the colour of a light

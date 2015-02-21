@@ -1,4 +1,4 @@
-/// light_init()
+///lights_init( shaders? , view_id )
 
 /** 
  * Initialises the lighting system
@@ -7,6 +7,7 @@
  *
  * @author Nik
  * @author xygthop3
+ * @author FatalSleep
  */
 
 // Options
@@ -18,9 +19,10 @@ lights_set_blur_amount( 3 );
  
 // Initialise surfaces
 draw_set_color(c_white);
-lights = surface_create( view_wview[0], view_hview[0] );
-blurring = surface_create( view_wview[0], view_hview[0] );
-result = surface_create( view_wview[0], view_hview[0] );
+view_id = argument[1];
+lights = surface_create( view_wview[view_id], view_hview[view_id] );
+blurring = surface_create( view_wview[view_id], view_hview[view_id] );
+result = surface_create( view_wview[view_id], view_hview[view_id] );
 
 // Configure light alpha
 var s1 = sprite_duplicate( sprLight );
@@ -30,6 +32,9 @@ sprite_set_alpha_from_sprite( s1, s2 );
 // Initialise gaussian blur shader
 uni_resolution_hoz = shader_get_uniform( shd_gaussian_horizontal, "resolution" );
 uni_resolution_vert = shader_get_uniform( shd_gaussian_vertical, "resolution" );
-var_resolution_x = view_wview[0] / bov;
-var_resolution_y = view_hview[0] / bov;
-shader_enabled = true;
+var_resolution_x = view_wview[view_id] / bov;
+var_resolution_y = view_hview[view_id] / bov;
+shader_enabled = argument[0];
+
+// Initialize light list
+light_list = ds_list_create();
