@@ -55,15 +55,13 @@ For the function ``` lights_init() ```,  "shaders?" defines whether or not to ap
 
 In order to draw lights you need to register light objects. You can do this with the function ``` lights_add( obj1, obj2, obj3, ... ) ```. Typical usage would be registering a light parent object using this.
 
-Call the light_set() script or each of the other five scripts individually to set up your light object. Just make sure that all the properties are set, otherwise an error will be thrown.
+Call the ``` light_set() ``` script to set up your light object. Just make sure that all the properties are set, otherwise an error will be thrown. There are 5 additional functions you can use to customise certain features:
 
 - ``` light_set_alpha( value ) ``` - sets the light's alpha
 - ``` light_set_color( colour ) ``` - sets the light's colour
 - ``` light_set_scale( xscale, yscale ) ``` - sets the light's scale
 - ``` light_set_spite( sprite, index ) ``` - sets the light's sprite
 - ``` light_set_offset( xoffset, yoffset ) ``` - sets the light's x,y offset
-
-A master function called ``` light_set() ``` exists that can modify all potential properties.
 
 ### Ambient Lighting
 
