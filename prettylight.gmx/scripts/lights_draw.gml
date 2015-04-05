@@ -26,12 +26,12 @@ draw_set_alpha( 1 );
 // Make lights more vivid if necessary
 if ( lv ) {
     draw_set_blend_mode( bm_add );
-    draw_surface_ext( lights, 0, 0, 1, 1, 0, c_white, 0.5 );
+    draw_surface_ext( lights, 0, 0, view_wport[global.light_view_id] / view_wview[global.light_view_id], view_hport[global.light_view_id] / view_hview[global.light_view_id], 0, c_white, 0.5 );
 }
 
 // Draw lights
 draw_set_blend_mode_ext( bm_dest_color, bm_src_color );
-draw_surface( lights, 0, 0 );
+draw_surface_ext( lights, 0, 0, view_wport[global.light_view_id] / view_wview[global.light_view_id], view_hport[global.light_view_id] / view_hview[global.light_view_id], 0, c_white, 1 );
 draw_set_blend_mode( bm_normal );
 
 // Process the blurring

@@ -20,9 +20,9 @@ lights_set_blur_amount( 3 );
 // Initialise surfaces
 draw_set_color(c_white);
 global.light_view_id = argument[1];
-lights = surface_create( view_wview[global.light_view_id], view_hview[global.light_view_id] );
-blurring = surface_create( view_wview[global.light_view_id], view_hview[global.light_view_id] );
-result = surface_create( view_wview[global.light_view_id], view_hview[global.light_view_id] );
+lights = surface_create( view_wport[global.light_view_id], view_hport[global.light_view_id] );
+blurring = surface_create( view_wport[global.light_view_id], view_hport[global.light_view_id] );
+result = surface_create( view_wport[global.light_view_id], view_hport[global.light_view_id] );
 
 // Configure light alpha
 var s1 = sprite_duplicate( sprLight );
@@ -32,8 +32,8 @@ sprite_set_alpha_from_sprite( s1, s2 );
 // Initialise gaussian blur shader
 uni_resolution_hoz = shader_get_uniform( shd_gaussian_horizontal, "resolution" );
 uni_resolution_vert = shader_get_uniform( shd_gaussian_vertical, "resolution" );
-var_resolution_x = view_wview[global.light_view_id] / bov;
-var_resolution_y = view_hview[global.light_view_id] / bov;
+var_resolution_x = view_wport[global.light_view_id] / bov;
+var_resolution_y = view_hport[global.light_view_id] / bov;
 shader_enabled = argument[0];
 
 // Initialize light list
