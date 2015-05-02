@@ -63,7 +63,7 @@ Call the ``` light_set() ``` script to set up your light object. Just make sure 
 - ``` light_set_spite( sprite, index ) ``` - sets the light's sprite
 - ``` light_set_offset( xoffset, yoffset ) ``` - sets the light's x,y offset
 
-### Ambient Lighting
+#### Ambient Lighting
 
 In the light controller you can specify ambient lighting. This will get displayed in areas that aren't lit up. To modify this, use the function ``` lights_set_ambience( colour, alpha ) ```. I've specified one I normally use in the controller that's included - it produces a nice brooding blue overlay.
 
@@ -81,13 +81,13 @@ The one sprite that's included with the package, ```sprLight```, is required for
 
 Two extra effects are enabled by default, but you can turn these off.
 
-### Vivid Lighting
+#### Vivid Lighting
 
 This amplifies lights in general and really brings out the colour used. This isn't very intensive but with lots of lights it might slow down the game a little bit. 
 
 - ``` lights_set_vivid( active? ) ``` - whether to enable vivid lighting
 
-### Ambient Blurring
+#### Ambient Blurring
 
 This makes use of xygthop3's gaussian blur shaders, and it makes everything look all bloomy and fuzzy and nice. This can be very intensive and might not work for older computers, so be sure to make it some sort of option if you decide to use it. If you turn off shaders in ``` lights_init() ``` blurring will not work. You can configure this with three functions:
 
