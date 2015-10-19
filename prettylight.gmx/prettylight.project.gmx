@@ -6,51 +6,54 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="prettylight">
-      <sprite>sprites\sprLight</sprite>
-    </sprites>
+    <sprite>sprites\sprExample</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgExample</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="prettylight">
-      <scripts name="Controller">
-        <script>scripts\lights_init.gml</script>
-        <script>scripts\lights_step.gml</script>
-        <script>scripts\lights_draw.gml</script>
-        <script>scripts\lights_finish.gml</script>
-        <script>scripts\lights_add.gml</script>
-        <scripts name="Options">
-          <script>scripts\lights_set_ambience.gml</script>
-          <script>scripts\lights_set_blur.gml</script>
-          <script>scripts\lights_set_blur_alpha.gml</script>
-          <script>scripts\lights_set_blur_amount.gml</script>
-          <script>scripts\lights_set_vivid.gml</script>
-        </scripts>
+      <scripts name="pl">
+        <script>scripts\pl_init.gml</script>
+        <script>scripts\pl_set_vivid.gml</script>
+        <script>scripts\pl_set_blurring.gml</script>
+        <script>scripts\pl_option_set_ambience.gml</script>
+        <script>scripts\pl_option_set_blur.gml</script>
+        <script>scripts\pl_add.gml</script>
+        <script>scripts\pl_update.gml</script>
+        <script>scripts\pl_draw.gml</script>
+        <script>scripts\pl_end.gml</script>
       </scripts>
-      <scripts name="Individual">
-        <script>scripts\light_set.gml</script>
-        <script>scripts\light_set_offset.gml</script>
-        <script>scripts\light_set_alpha.gml</script>
-        <script>scripts\light_set_color.gml</script>
-        <script>scripts\light_set_scale.gml</script>
-        <script>scripts\light_set_sprite.gml</script>
+      <scripts name="pl_light">
+        <script>scripts\pl_light_init.gml</script>
+        <script>scripts\pl_light_get_alpha.gml</script>
+        <script>scripts\pl_light_set_alpha.gml</script>
+        <script>scripts\pl_light_get_radius.gml</script>
+        <script>scripts\pl_light_set_radius.gml</script>
+        <script>scripts\pl_light_get_color.gml</script>
+        <script>scripts\pl_light_set_color.gml</script>
+        <script>scripts\pl_light_update.gml</script>
+        <script>scripts\pl_light_draw.gml</script>
+        <script>scripts\pl_light_destroy.gml</script>
       </scripts>
     </scripts>
   </scripts>
   <shaders name="shaders">
     <shaders name="prettylight">
-      <shader type="GLSLES">shaders\shd_gaussian_horizontal.shader</shader>
-      <shader type="GLSLES">shaders\shd_gaussian_vertical.shader</shader>
+      <shader type="GLSLES">shaders\pl_shd_gaussian_horizontal.shader</shader>
+      <shader type="GLSLES">shaders\pl_shd_gaussian_vertical.shader</shader>
     </shaders>
   </shaders>
   <objects name="objects">
-    <objects name="prettylight">
-      <object>objects\objLight</object>
-      <object>objects\objLightControl</object>
-    </objects>
+    <object>objects\control</object>
+    <object>objects\objLight</object>
+    <object>objects\objLightBig</object>
+    <object>objects\objExample</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\rmExample</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
