@@ -2,7 +2,7 @@
 <h1 align="center">prettylight</h1>
 <p align="center">Pretty lights for GameMaker</p>
 
-Version 2.0
+<p align="center"><i>Version 2.0</i></p>
 
 prettylight is a powerful lighting engine for use with GameMaker: Studio. It makes use of surfaces and shaders to give you a simple to use yet optimal solution to your problems in need of lighting up!
 
