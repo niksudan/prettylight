@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objLight</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Example light object
+            <string>/// Example big light object
 
-pl_light_init(90, make_color_rgb(252, 150, 55), 1);
+pl_light_init(180, make_color_rgb(252, 150, 55), 1);
 </string>
           </argument>
         </arguments>

@@ -1,96 +1,49 @@
-<p align="center"><img width="200" src="http://i.imgur.com/R6cqqDc.png"></p>
+<p align="center"><img width="150" src="http://i.imgur.com/R6cqqDc.png"></p>
 <h1 align="center">prettylight</h1>
-<p align="center">Pretty lights for Game Maker</p>
+<p align="center">Pretty lights for GameMaker</p>
 
-- [Screenshots](#screenshots)
-- [Credits](#credits)
-- [Prerequisites](#prerequisites)
-- [Setting Up](#setting-up)
-- [Drawing Lights](#drawing-lights)
-  - [Ambient Lighting](#ambient-lighting)
-- [Light Sprites](#light-sprites)
-- [Extra Effects](#extra-effects)
-  - [Vivid Lighting](#vivid-lighting)
-  - [Ambient Blurring](#ambient-blurring)
+<p align="center"><i>Version 2.0</i></p>
+
+prettylight is a powerful lighting engine for use with GameMaker: Studio. It makes use of surfaces and shaders to give you a simple to use yet optimal solution to your problems in need of lighting up!
 
 ## Screenshots
 
-![Tercon Major](http://i.imgur.com/jMfCAMY.png)
-
-![Protocol](http://i.imgur.com/NN0c4ex.png)
-
-![Ahriman's Treasure](http://i.imgur.com/YEpCTx5.png)
-
-![Skolgbor](http://i.imgur.com/QEYSaAh.png)
+![](http://i.imgur.com/8lQR4pk.png)
+![](http://i.imgur.com/820eNjo.png)
 
 ## Credits
 
-prettylight is a simplistic and powerful lighting engine for use with GameMaker: Studio. It features code by FatalSleep and xygthop3, who are amazing coders and I can't thank them enough for the resources they create.
+Lots of lighting help by **FatalSleep**, gaussian blur shaders written by **xygthop3**.
 
-Please give credit to **Nik Sudan, FatalSleep and xygthop3** if you decide to use it in your projects!
+## Usage
 
-## Prerequisites
+### Setting Up
 
-prettylight requires a few things in your project in order for it to function.
+prettylight doesn't need much to work. It needs the appropriate scripts and shaders to run properly, that's all.
 
-- A view
-- A light sprite called ```sprLight```
-- A light controller object
-- At least one light object
+First things first, you'll want to initialise the system within your control object. Simply call `pl_init()` in your **create event** to set up the engine, and preferably add all light object parents within the `pl_add()` method. For example, all your light sources would be children of an object called `objLight` - you'd then add that parent object to the light objects list in order for it to work. This is so the engine knows which objects it should mess with when lighting things up!
 
-prettylight comes with a prebuilt light controller and parent object, but you can implement their functionality into other objects.
+You'll need to process the engine in a **step event** of your choosing (**begin step** is preferred) using `pl_update()`, draw the lights in the **draw event** with `pl_draw()`, and end the system in the **room end**/**game end** event using `pl_end()`.
 
-## Setting Up
+You'll also need a view to draw the lights. prettylight is currently set to process in the view with id 0 (the default one).
 
-The lights are controlled with the light controller object. This should have a pretty low depth so it runs before other objects. The controller object needs to run 4 functions:
+### Making Lights
 
-- ``` lights_init( shaders? , view_id ) ``` - this sets up the lighting system, call this in a **creation or trigger event**
-- ``` lights_step() ``` - this processes the lighting system, call this in a **step event**
-- ``` lights_draw() ``` - this controls the drawing for the lighting system, call this in the **draw gui event**
-- ``` lights_finish() ``` - this ends the lighting system, call this in the **room/game end event**
+In order for something to light up, make sure it or it's parent is added to the light object list using `pl_add(obj1, obj2, ...)` as stated above. Then simply call `pl_light_init(radius, colour, alpha)` in your create event. You may modify your light using the available methods, but please note you can't specify a radius larger than the one you initially put in.
 
-For the function ``` lights_init() ```,  "shaders?" defines whether or not to apply shaders to the lighting system and "view_id" is the id 0-15 of whichever view you wish to enable lighting on.
+### Customisation
 
-## Drawing Lights
+You may toggle certain options using the provided scripts:
 
-In order to draw lights you need to register light objects. You can do this with the function ``` lights_add( obj1, obj2, obj3, ... ) ```. Typical usage would be registering a light parent object using this.
+- `pl_set_vivid(active?)` - toggles vivid lighting (uses additional surface)
+- `pl_set_blurring(active?)` - toggles blurring (uses shaders)
+- `pl_option_set_ambience(color, brightness)` - make changes to the ambience
+- `pl_option_set_blur(amount, alpha)` - make changes to the blur
 
-Call the ``` light_set() ``` script to set up your light object. Just make sure that all the properties are set, otherwise an error will be thrown. There are 5 additional functions you can use to customise certain features:
+## What's Next?
 
-- ``` light_set_alpha( value ) ``` - sets the light's alpha
-- ``` light_set_color( colour ) ``` - sets the light's colour
-- ``` light_set_scale( xscale, yscale ) ``` - sets the light's scale
-- ``` light_set_spite( sprite, index ) ``` - sets the light's sprite
-- ``` light_set_offset( xoffset, yoffset ) ``` - sets the light's x,y offset
+prettylight is currently maintained primarily by [Nik Sudan](http://github.com/niksudan), but I'm more than happy to approve merge requests that help the project develop even further! Future features that would be cool include:
 
-#### Ambient Lighting
-
-In the light controller you can specify ambient lighting. This will get displayed in areas that aren't lit up. To modify this, use the function ``` lights_set_ambience( colour, alpha ) ```. I've specified one I normally use in the controller that's included - it produces a nice brooding blue overlay.
-
-## Light Sprites
-
-In prettylight, lights rely on sprites. A basic radial one is included, but you can introduce more interesting patterns with ease. Lights need to be in a certain way for it to function properly:
-
-- Lights should only use white
-- A white area indicates a fully lit section
-- A transparent area indicates a non-lit section
-
-The one sprite that's included with the package, ```sprLight```, is required for the package to work, so don't modify it!
-
-## Extra Effects
-
-Two extra effects are enabled by default, but you can turn these off.
-
-#### Vivid Lighting
-
-This amplifies lights in general and really brings out the colour used. This isn't very intensive but with lots of lights it might slow down the game a little bit. 
-
-- ``` lights_set_vivid( active? ) ``` - whether to enable vivid lighting
-
-#### Ambient Blurring
-
-This makes use of xygthop3's gaussian blur shaders, and it makes everything look all bloomy and fuzzy and nice. This can be very intensive and might not work for older computers, so be sure to make it some sort of option if you decide to use it. If you turn off shaders in ``` lights_init() ``` blurring will not work. You can configure this with three functions:
-
-- ``` lights_set_blur( active? ) ``` - whether to enable ambient blurring
-- ``` lights_set_blur_alpha( alpha ) ``` - the alpha overlay (1 = fully blurred, 0 = no blur)
-- ``` lights_set_blur_amount( amount ) ``` - the blur amount (the bigger the number, the more intensive it is)
+- Shadow casters (pretty much coded, needs optimising though!)
+- Ambient blur (was in version 1, would be nice to have a comeback!)
+- Light styles (cartoony, pixelly, etc.)

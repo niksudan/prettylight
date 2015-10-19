@@ -64,6 +64,7 @@
     <option_audioGroupCount>1</option_audioGroupCount>
     <option_author></option_author>
     <option_backimage>nil</option_backimage>
+    <option_borderless>false</option_borderless>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
@@ -89,6 +90,7 @@
     <option_html5_advertising_type>Supersonic Ads</option_html5_advertising_type>
     <option_html5_allow_fullscreen>true</option_html5_allow_fullscreen>
     <option_html5_alwaysreload>false</option_html5_alwaysreload>
+    <option_html5_browser_title>Created with GameMaker:Studio</option_html5_browser_title>
     <option_html5_centergame>false</option_html5_centergame>
     <option_html5_flurry_enable>false</option_html5_flurry_enable>
     <option_html5_flurry_id></option_html5_flurry_id>
@@ -101,6 +103,7 @@
     <option_html5_interpolate>true</option_html5_interpolate>
     <option_html5_jsprepend></option_html5_jsprepend>
     <option_html5_loadingbar>-1</option_html5_loadingbar>
+    <option_html5_localrunalert>true</option_html5_localrunalert>
     <option_html5_outputdebugtoconsole>false</option_html5_outputdebugtoconsole>
     <option_html5_outputname>index.html</option_html5_outputname>
     <option_html5_scale>-1</option_html5_scale>
