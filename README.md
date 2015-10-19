@@ -6,7 +6,7 @@
 
 prettylight is a powerful lighting engine for use with GameMaker: Studio. It makes use of surfaces and shaders to give you a simple to use yet optimal solution to your problems in need of lighting up!
 
-[Now available on the YoyoGames marketplace!](https://marketplace.yoyogames.com/assets/2493/prettylight)
+[Now available on the GameMaker marketplace!](https://marketplace.yoyogames.com/assets/2493/prettylight)
 
 ## Screenshots
 
