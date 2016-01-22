@@ -10,8 +10,8 @@ prettylight is a powerful lighting engine for use with GameMaker: Studio. It mak
 
 ## Screenshots
 
-![](http://i.imgur.com/8lQR4pk.png)
-![](http://i.imgur.com/820eNjo.png)
+<img src="http://i.imgur.com/8lQR4pk.png" width="49%">
+<img src="http://i.imgur.com/820eNjo.png" width="49%">
 
 ## Credits
 
