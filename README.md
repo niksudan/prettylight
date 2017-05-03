@@ -33,7 +33,53 @@ Initialise a light in the **create** event of a light object with `pl_light_init
 
 ## API
 
-Please be patient - API documentation is coming soon.
+### Global Methods
+
+You can customise certain aspects of the framework with the following methods:
+
+#### `pl_option_set_ambience(color, brightness)`
+
+Set the ambience colour and brightness.
+
+#### `pl_option_set_blur(amount, alpha)`
+
+Set the blurring amount and transparency.
+
+#### `pl_set_blurring(active?)`
+
+Set whether blurring should be active.
+
+#### `pl_set_vivid(active?)`
+
+Set whether vivid lighting should be active.
+
+### Light Methods
+
+You can customise each individual light with the following methods:
+
+#### `pl_light_get_alpha()`
+
+Get the transparency of the light.
+
+#### `pl_light_get_color()`
+
+Get the colour of the light.
+
+#### `pl_light_get_radius()`
+
+Get the radius of the light.
+
+#### `pl_light_set_alpha(value)`
+
+Set the transparency of the light.
+
+#### `pl_light_set_color(value)`
+
+Set the colour of the light.
+
+#### `pl_light_set_radius(value)`
+
+Set the radius of the light.
 
 ## Credits
 
