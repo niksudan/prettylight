@@ -1,21 +1,18 @@
-<p align="center"><img width="150" src="http://i.imgur.com/R6cqqDc.png"></p>
-<h1 align="center">prettylight</h1>
-<p align="center">Pretty lights for GameMaker</p>
+# 💡 prettylight [![GitHub release](https://img.shields.io/github/release/niksudan/prettylight.svg)](https://github.com/niksudan/prettylight/releases) [![GitHub stars](https://img.shields.io/github/stars/niksudan/prettylight.svg?style=social&label=stars&style)](https://github.com/niksudan/prettylight) [![Marketplace download](https://img.shields.io/badge/marketplace-download-green.svg)](https://marketplace.yoyogames.com/assets/2493/prettylight)
 
-<p align="center"><i>Version 2.0</i></p>
+### Pretty lights for GameMaker
 
-prettylight is a powerful lighting engine for use with GameMaker: Studio. It makes use of surfaces and shaders to give you a simple to use yet optimal solution to your problems in need of lighting up!
+A powerful lighting engine for use with GameMaker: Studio. It makes use of surfaces and shaders to give you a simple to use yet optimal solution to your problems in need of lighting up!
 
-[Now available on the GameMaker marketplace!](https://marketplace.yoyogames.com/assets/2493/prettylight)
-
-## Screenshots
-
-<img src="http://i.imgur.com/8lQR4pk.png" width="49%">
-<img src="http://i.imgur.com/820eNjo.png" width="49%">
+<div style="display: flex;">
+  <img src="http://i.imgur.com/8lQR4pk.png" height="200px">
+  <img src="http://i.imgur.com/820eNjo.png" height="200px">
+</div>
 
 ## Credits
 
-Lots of lighting help by **FatalSleep**, gaussian blur shaders written by **xygthop3**.
+- **FatalSleep** - Additional code
+- **xygthop3** - Gaussian blur shaders
 
 ## Usage
 
