@@ -11,8 +11,8 @@ A powerful lighting engine for use with GameMaker: Studio. It makes use of surfa
 
 ### Prerequisites
 
-- GameMaker: Studio
-- The included scripts and shaders added to your project
+- [GameMaker: Studio 1](http://www.yoyogames.com/gamemaker)
+- The required [scripts](https://github.com/niksudan/prettylight/tree/master/prettylight.gmx/scripts) and [shaders](https://github.com/niksudan/prettylight/tree/master/prettylight.gmx/shaders) added to your project
 - Light objects
 - A view
 
