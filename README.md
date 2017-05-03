@@ -57,6 +57,14 @@ Set whether vivid lighting should be active.
 
 You can customise each individual light with the following methods:
 
+#### `pl_light_init(radius, colour, alpha)`
+
+Initialise a new light.
+
+#### `pl_light_destroy()`
+
+Destroy the current light.
+
 #### `pl_light_get_alpha()`
 
 Get the transparency of the light.
