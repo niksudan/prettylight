@@ -2,19 +2,28 @@
 
 A powerful lighting engine for use with GameMaker: Studio. It makes use of surfaces and shaders to give you a simple to use yet optimal solution to your problems in need of lighting up!
 
+Now includes beta GMS2 support! If you encounter any issues using it with GMS2, please let us know.
+
 <div style="display: flex;">
-  <img src="http://i.imgur.com/8lQR4pk.png" height="200px">
-  <img src="http://i.imgur.com/820eNjo.png" height="200px">
+  <img src="https://i.imgur.com/8lQR4pk.png" height="200px">
+  <img src="https://i.imgur.com/820eNjo.png" height="200px">
 </div>
 
 ## Usage
 
-### Prerequisites
+### Prerequisites (GameMaker: Studio)
 
-- [GameMaker: Studio 1](http://www.yoyogames.com/gamemaker)
+- GameMaker: Studio 1
 - The required [scripts](https://github.com/niksudan/prettylight/tree/master/prettylight.gmx/scripts) and [shaders](https://github.com/niksudan/prettylight/tree/master/prettylight.gmx/shaders) added to your project
 - Light objects
 - A view
+
+### Prerequisites (Gamemaker Studio 2)
+
+- [Gamemaker Studio 2](http://www.yoyogames.com/gamemaker)
+- The required [scripts](INSERT LINK!!!) and [shaders](INSERT LINK!!!) added to your project (You can drag scripts in but you'll have to manually create the shaders with copy/paste)
+- Light objects
+- A view with a camera
 
 ### Registration
 
@@ -23,7 +32,7 @@ You should make use of a game control object to register settings and such for t
 - Initialise the system in the **create** event with `pl_init()`
 - Process the system in the **step/begin step** event with `pl_update()`
 - Render the lights in the **draw** event with `pl_draw()`
-- Clear the system in the **room end/game end** event with `pl_end()`
+- Clear the system in the **room end/game end/cleanup** event with `pl_end()`
 
 ### Adding Lights
 
