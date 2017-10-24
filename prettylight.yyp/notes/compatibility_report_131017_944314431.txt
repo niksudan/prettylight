@@ -1,0 +1,153 @@
+Converting GML script : ${project_dir}\scripts\pl_end\pl_end.gml
+Converted description : /// @description  pl_end()
+/// @function  pl_end
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_get_radius\pl_light_get_radius.gml
+Converted description : /// @description  pl_light_get_radius()
+/// @function  pl_light_get_radius
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_set_radius\pl_light_set_radius.gml
+Converted description : /// @description  pl_light_set_radius(value)
+/// @function  pl_light_set_radius
+/// @param value
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_get_color\pl_light_get_color.gml
+Converted description : /// @description  pl_light_get_color()
+/// @function  pl_light_get_color
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_set_color\pl_light_set_color.gml
+Converted description : /// @description  pl_light_set_color(value)
+/// @function  pl_light_set_color
+/// @param value
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_update\pl_light_update.gml
+Converted description : /// @description  pl_light_update()
+/// @function  pl_light_update
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_draw\pl_light_draw.gml
+Converted builtin : line 4 : view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 4 : view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description : /// @description  pl_light_draw()
+/// @function  pl_light_draw
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_destroy\pl_light_destroy.gml
+Converted description : /// @description  pl_light_destroy()
+/// @function  pl_light_destroy
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_set_alpha\pl_light_set_alpha.gml
+Converted description : /// @description  pl_light_set_alpha(value)
+/// @function  pl_light_set_alpha
+/// @param value
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_update\pl_update.gml
+Converted builtin : line 12 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 41 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 12 : view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 41 : view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted description : /// @description  pl_update()
+/// @function  pl_update
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_draw\pl_draw.gml
+Converted builtin : line 6 : view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 11 : view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 6 : view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 11 : view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description : /// @description  pl_draw()
+/// @function  pl_draw
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_init\pl_init.gml
+Converted builtin : line 7 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 11 : view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 7 : view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 11 : view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 21 : view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin : line 22 : view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted description : /// @description  pl_init()
+/// @function  pl_init
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_option_set_ambience\pl_option_set_ambience.gml
+Converted description : /// @description  pl_option_set_ambience(color, brightness)
+/// @function  pl_option_set_ambience
+/// @param color
+/// @param  brightness
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_set_blurring\pl_set_blurring.gml
+Converted description : /// @description  pl_set_blurring(active?)
+/// @function  pl_set_blurring
+/// @param active?
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_init\pl_light_init.gml
+Converted description : /// @description  pl_light_init(radius, colour, alpha)
+/// @function  pl_light_init
+/// @param radius
+/// @param  colour
+/// @param  alpha
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_add\pl_add.gml
+Converted description : /// @description  pl_add(obj1, obj2, ...)
+/// @function  pl_add
+/// @param obj1
+/// @param  obj2
+/// @param  ...
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_option_set_blur\pl_option_set_blur.gml
+Converted description : /// @description  pl_option_set_blur(amount, alpha)
+/// @function  pl_option_set_blur
+/// @param amount
+/// @param  alpha
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_set_vivid\pl_set_vivid.gml
+Converted description : /// @description  pl_set_vivid(active?)
+/// @function  pl_set_vivid
+/// @param active?
+Check!
+
+Converting GML script : ${project_dir}\scripts\pl_light_get_alpha\pl_light_get_alpha.gml
+Converted description : /// @description  pl_light_get_alpha()
+/// @function  pl_light_get_alpha
+Check!
+
+Converting GML script : ${project_dir}\objects\control\Create_0.gml
+Converted description : /// @description  Start prettylight
+
+Converting GML script : ${project_dir}\objects\control\Step_1.gml
+Converted description : /// @description  Process prettylight
+
+Converting GML script : ${project_dir}\objects\control\Other_5.gml
+Converted description : /// @description  End prettylight
+
+Converting GML script : ${project_dir}\objects\control\Draw_0.gml
+Converted description : /// @description  Draw prettylight
+
+Converting GML script : ${project_dir}\objects\objExample\Step_0.gml
+Converted description : /// @description  Example object that moves around
+
+Converting GML script : ${project_dir}\objects\objLight\Create_0.gml
+Converted description : /// @description  Example light object
+
+Converting GML script : ${project_dir}\objects\objLightBig\Create_0.gml
+Converted description : /// @description  Example big light object
+
+game speed set to 30
+added compatibility script draw/draw_set_blend_mode.gml
+added compatibility script draw/draw_set_blend_mode_ext.gml
+added compatibility script view/__view_get.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
