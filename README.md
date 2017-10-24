@@ -7,6 +7,10 @@ A powerful lighting engine for use with GameMaker: Studio. It makes use of surfa
   <img src="http://i.imgur.com/820eNjo.png" height="200px">
 </div>
 
+## ⚠️ GameMaker Studio 2 Notice
+
+These scripts are currently untested and unprepared for GameMaker Studio 2. You may import them into your project and use but they may not work. [We are working on it though](https://github.com/niksudan/prettylight/pull/12)!
+
 ## Usage
 
 ### Prerequisites
