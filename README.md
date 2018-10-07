@@ -26,7 +26,7 @@ You should make use of a game control object to register settings and such for t
 
 - Initialise the system in the **create** event with `pl_init()`
 - Process the system in the **step/begin step** event with `pl_update()`
-- Render the lights in the **draw** event with `pl_draw()`
+- Render the lights in the **draw end** event with `pl_draw()`
 - Clear the system in the **room end/game end** event with `pl_end()`
 
 ### Adding Lights
